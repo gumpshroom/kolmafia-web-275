@@ -38,6 +38,7 @@ net.java.dev.spellcast.utilities.JComponentUtilities
 apple.dts.samplecode.osxadapter.OSXAdapter
 tab.CloseTabPaneEnhancedUI
 tab.CloseTabPaneUI
+net.sourceforge.kolmafia.utilities.LogStream
 net.sourceforge.kolmafia.persistence.FlaggedItems
 net.sourceforge.kolmafia.persistence.ItemDatabase
 net.sourceforge.kolmafia.utilities.IntegerArray
@@ -204,8 +205,8 @@ net.sourceforge.kolmafia.swingui.GenericFrame$TabBackwardListener
 net.sourceforge.kolmafia.swingui.listener.DefaultComponentFocusTraversalPolicy
 net.sourceforge.kolmafia.swingui.listener.DefaultComponentFocusTraversalPolicy$DefaultComponentFirstComparator
 net.sourceforge.kolmafia.swingui.LoginFrame$LoginPanel
-net.java.dev.spellcast.utilities.ActionPanel$VerifyButtonPanel
 net.java.dev.spellcast.utilities.ActionVerifyPanel$VerifiableElement
+net.java.dev.spellcast.utilities.ActionPanel$VerifyButtonPanel
 net.sourceforge.kolmafia.swingui.panel.GenericPanel$ActionConfirmListener
 net.sourceforge.kolmafia.swingui.LoginFrame$LoginPanel$LoginNameComboBox
 net.sourceforge.kolmafia.swingui.widget.AutoFilterComboBox
