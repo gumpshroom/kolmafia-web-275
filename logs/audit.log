@@ -9,3 +9,9 @@
 11-Apr-2020-21:37:45.308 | SUCCESS | admin |  | / | http | 127.0.0.1 | org.webswing.server.services.security.modules.embeded.EmbededSecurityModule
 11-Apr-2020-21:46:15.617 | SUCCESS | admin |  | / | http | 127.0.0.1 | org.webswing.server.services.security.modules.embeded.EmbededSecurityModule
 11-Apr-2020-22:08:39.304 | SUCCESS | admin |  | / | http | 127.0.0.1 | org.webswing.server.services.security.modules.embeded.EmbededSecurityModule
+11-Apr-2020-23:19:01.794 | SUCCESS | admin |  | / | http | 0:0:0:0:0:0:0:1 | org.webswing.server.services.security.modules.embeded.EmbededSecurityModule
+11-Apr-2020-23:19:17.294 | SUCCESS | admin |  | / | http | 127.0.0.1 | org.webswing.server.services.security.modules.embeded.EmbededSecurityModule
+11-Apr-2020-23:21:34.700 | SUCCESS | admin |  | / | http | 23.249.172.223 | org.webswing.server.services.security.modules.embeded.EmbededSecurityModule
+12-Apr-2020-10:29:07.664 | SUCCESS | admin |  | / | http | 204.14.73.14 | org.webswing.server.services.security.modules.embeded.EmbededSecurityModule
+12-Apr-2020-10:29:22.107 | SUCCESS | admin |  | / | http | 127.0.0.1 | org.webswing.server.services.security.modules.embeded.EmbededSecurityModule
+12-Apr-2020-10:33:13.974 | SUCCESS | admin |  | / | http | 204.14.73.14 | org.webswing.server.services.security.modules.embeded.EmbededSecurityModule

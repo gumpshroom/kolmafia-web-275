@@ -38,7 +38,6 @@ net.java.dev.spellcast.utilities.JComponentUtilities
 apple.dts.samplecode.osxadapter.OSXAdapter
 tab.CloseTabPaneEnhancedUI
 tab.CloseTabPaneUI
-net.sourceforge.kolmafia.utilities.LogStream
 net.sourceforge.kolmafia.persistence.FlaggedItems
 net.sourceforge.kolmafia.persistence.ItemDatabase
 net.sourceforge.kolmafia.utilities.IntegerArray
@@ -230,3 +229,11 @@ net.sourceforge.kolmafia.swingui.OptionsFrame
 net.sourceforge.kolmafia.KoLmafia$UpdateCheckRunnable
 net.sourceforge.kolmafia.RequestThread$SequencedRunnable
 net.sourceforge.kolmafia.utilities.InputFieldUtilities
+net.sourceforge.kolmafia.request.LoginRequest
+net.sourceforge.kolmafia.session.LogoutManager
+net.sourceforge.kolmafia.KoLmafia$QuitRunnable
+net.java.dev.spellcast.utilities.ChatBuffer$AppendHandler
+net.java.dev.spellcast.utilities.ChatBuffer$ScrollHandler
+net.sourceforge.kolmafia.swingui.SystemTrayFrame
+net.sourceforge.kolmafia.swingui.GenericFrame$1
+net.sourceforge.kolmafia.utilities.LogStream
