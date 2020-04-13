@@ -1,1 +1,1 @@
-web: ps au | grep "X \:99" | wc -l; export DISPLAY=':99'; export HOME=`dirname $0`; xvfb-run java -Djava.awt.headless=true -jar webswing-server.war -h 0.0.0.0 -j $HOME/jetty.properties -c $HOME/webswing.config -p $PORT; export XAUTHORITY=~/.Xauthority;
+web: kill -9 $(sudo lsof -t -i:99); export DISPLAY=':99'; export HOME=`dirname $0`; xvfb-run java -Djava.awt.headless=true -jar webswing-server.war -h 0.0.0.0 -j $HOME/jetty.properties -c $HOME/webswing.config -p $PORT; export XAUTHORITY=~/.Xauthority;
