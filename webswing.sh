@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Startup script for the Webswing 
+# Startup script for the Webswing
 #
 # Use following variables to override default settings:
 # WEBSWING_HOME
@@ -9,12 +9,12 @@
 # WEBSWING_JAVA_OPTS
 # WEBSWING_LOG_FILE
 # WEBSWING_PID_FILE
-# 
-# for example: 
+#
+# for example:
 # WEBSWING_HOME=/home/webswing WEBSWING_JAVA_HOME=/var/share/jdk8 ./webswing.sh start
 
 export HOME=`dirname $0`
-export OPTS="-h 0.0.0.0 -j $HOME/jetty.properties -c $HOME/webswing.config"
+export OPTS="-h 0.0.0.0 -j $HOME/jetty.properties -c $HOME/webswing.config -p $PORT"
 export JAVA_HOME=$JAVA_HOME
 export JAVA_OPTS=-Xmx2g
 export LOG=$HOME/webswing.out
@@ -22,48 +22,48 @@ export PID_PATH_NAME=$HOME/webswing.pid
 
 if [ -n "$WEBSWING_HOME" ]; then
     HOME="$WEBSWING_HOME"
-fi  
+fi
 if [ -n "$WEBSWING_OPTS" ]; then
     OPTS=$WEBSWING_OPTS
-fi  
+fi
 if [ -n "$WEBSWING_JAVA_HOME" ]; then
     JAVA_HOME=$WEBSWING_JAVA_HOME
-fi  
+fi
 if [ -n "$WEBSWING_JAVA_OPTS" ]; then
     JAVA_OPTS=$WEBSWING_JAVA_OPTS
-fi 
+fi
 if [ -n "$WEBSWING_LOG_FILE" ]; then
     LOG=$WEBSWING_LOG_FILE
-fi 
+fi
 if [ -n "$WEBSWING_PID_FILE" ]; then
     PID_PATH_NAME=$WEBSWING_PID_FILE
-fi 
+fi
 
 
-if [ -z `command -v $0` ]; then 
+if [ -z `command -v $0` ]; then
     CURRENTDIR=`pwd`
     cd `dirname $0` > /dev/null
     SCRIPTPATH=`pwd`/
     cd $CURRENTDIR
 else
-    SCRIPTPATH="" 
+    SCRIPTPATH=""
 fi
 
 if [ ! -f $HOME/webswing-server.war ]; then
-    echo "Webswing executable not found in $HOME folder" 
+    echo "Webswing executable not found in $HOME folder"
     exit 1
 fi
 
 if [ ! -f $JAVA_HOME/bin/java ]; then
-    echo "Java installation not found in $JAVA_HOME folder" 
+    echo "Java installation not found in $JAVA_HOME folder"
     exit 1
 fi
 if [ -z `command -v xvfb-run` ]; then
-    echo "Unable to locate xvfb-run command. Please install Xvfb before starting Webswing." 
+    echo "Unable to locate xvfb-run command. Please install Xvfb before starting Webswing."
     exit 1
 fi
 if [ ! -z `command -v ldconfig` ]; then
-    if [ `ldconfig -p | grep -i libxext.so | wc -l` -eq 0 ]; then 
+    if [ `ldconfig -p | grep -i libxext.so | wc -l` -eq 0 ]; then
         echo "Missing dependent library libXext."
         exit 1
     fi
