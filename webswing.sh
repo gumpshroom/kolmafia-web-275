@@ -16,7 +16,7 @@
 export HOME=`dirname $0`
 export OPTS="-h 0.0.0.0 -j $HOME/jetty.properties -c $HOME/webswing.config -p $PORT"
 export JAVA_HOME=$JAVA_HOME
-export JAVA_OPTS=-Xmx2g
+export JAVA_OPTS="-Xmx2g -Djava.awt.headless=true"
 export LOG=$HOME/webswing.out
 export PID_PATH_NAME=$HOME/webswing.pid
 
