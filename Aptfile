@@ -1,5 +1,6 @@
 xvfb
 xauth
+xorg-x11-xauth
 libxext6
 libxi6
 libxtst6
