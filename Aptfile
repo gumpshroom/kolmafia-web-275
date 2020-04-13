@@ -1,4 +1,5 @@
 xvfb
+xauth
 libxext6
 libxi6
 libxtst6
