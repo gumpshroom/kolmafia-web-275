@@ -1,1 +1,1 @@
-web: xvfb-run --server-num=69 sh ./run.sh start
+web: xvfb-run -a sh ./run.sh start
