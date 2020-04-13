@@ -1,1 +1,1 @@
-web: xvfb-run -a sh ./run.sh start
+web: ps au | grep "X \:99" | wc -l; xinit -- :99; export XAUTHORITY=~/.Xauthority; export DISPLAY=':99'; export HOME=`dirname $0`; xvfb-run java -Djava.awt.headless=true -jar webswing-server.war -h 0.0.0.0 -j $HOME/jetty.properties -c $HOME/webswing.config -p $PORT
