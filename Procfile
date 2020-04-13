@@ -1,1 +1,1 @@
-web: xvfb-run sh ./run.sh start
+web: xvfb-run -a sh ./run.sh start
