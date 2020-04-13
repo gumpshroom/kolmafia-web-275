@@ -1,2 +1,7 @@
 libxtst6
 libxtst6:i386
+libxrender1:i386
+libxi6:i386
+libxrender1
+libxtst6
+libxi6
