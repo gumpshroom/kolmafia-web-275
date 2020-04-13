@@ -5,3 +5,4 @@ libxi6:i386
 libxrender1
 libxtst6
 libxi6
+xvfb
