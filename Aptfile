@@ -1,6 +1,5 @@
 xvfb
 xauth
-xinit
 libxext6
 libxi6
 libxtst6
